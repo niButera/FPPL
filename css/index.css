@@ -1,0 +1,54 @@
+body {
+    background-color: rgba(199, 199, 199, 1);
+    margin: 7%;
+    text-align: center;
+}
+
+/* FONTES */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+span {
+    font-family: "Inter", sans-serif;
+
+}
+
+p {
+    color: white;
+}
+
+h1 {}
+
+h2 {
+
+    color: white;
+}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+span {}
+
+/* CAIXAS */
+
+#box-b {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.096);
+    background: rgba(49, 83, 104, 1);
+    padding: 10px;
+    border-radius: 25px;
+}
+
+#box-cnc {
+    background: rgba(49, 83, 104, 1);
+}
+
+#box-db {
+    background: rgba(0, 35, 57, 1);
+}
