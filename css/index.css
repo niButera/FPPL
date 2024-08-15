@@ -1,54 +1,181 @@
+/* CORPO */
 body {
     background-color: rgba(199, 199, 199, 1);
-    margin: 7%;
+    margin: 140px 9% 30px 9%;
     text-align: center;
 }
 
-/* FONTES */
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-span {
-    font-family: "Inter", sans-serif;
-
+#info-b {
+    justify-content: space-between;
+    margin-top: 25px;
+    display: flex;
 }
 
-p {
+#actions {
+    text-align: left;
+}
+
+.box-db {
+    display: flex;
+}
+
+/* CABEÇALHO */
+header { 
+    transition: transform 0.3s ease-in-out; 
+    background-color: rgba(0, 35, 57, 1);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+#h-content {
+    font-family: "Inter", sans-serif;
+    align-items: center;
+    font-weight: bold;
+    margin: 20px 0px;
+    font-size: 18px;
+    padding: 10px 0;
+    color: white;
+    margin: 0 auto; 
+    display: flex;
+    width: 82%; 
+}
+
+#topicos {
+    background-color: rgba(117, 138, 151, 1);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    color: white;
+    margin: 0 auto; 
+}
+
+#topicos a {
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 14px; 
     color: white;
 }
 
-h1 {}
+/* FONTES */
+p {
+    font-family: "Inter", sans-serif;
+    color: rgb(233, 233, 233);
+    font-weight: 200;
+    text-align: left;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+a {
+    font-family: "Inter", sans-serif;
+    color: rgb(233, 233, 233);
+    font-weight: 200;
+    text-align: left;
+    font-size: 15px;
+}
+
+h1 {
+    font-family: "Inter", sans-serif;
+}
 
 h2 {
-
+    font-family: "Inter", sans-serif;
+    margin-bottom: 0px;
+    text-align: left;
+    font-size: 18px;
     color: white;
 }
 
-h3 {}
+h3 {
+    font-family: "Inter", sans-serif;
+    color: rgb(233, 233, 233);
+    font-weight: 200;
+    text-align: left;
+    font-size: 18px;
+}
 
-h4 {}
+h4 {
+    font-family: "Inter", sans-serif;
+    color: rgb(233, 233, 233);
+    font-weight: bold;
+    text-align: left;
+    font-size: 30px;
+    margin: 0px;
+}
 
-h5 {}
+h5 {
+    font-family: "Inter", sans-serif;
+}
 
-span {}
+span {
+    font-family: "Inter", sans-serif;
+}
+
+/* BOTÕES */
+#Expandir1, #Expandir2, #Expandir3 {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.274);
+    background-color: rgba(239, 239, 239, 1);
+    color: rgba(49, 83, 104, 1);
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 15px;
+    width: 100%;
+    border: 0px;
+}
+
+#ac-btn {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+    border-radius: 100%;
+    cursor: pointer;
+    margin: 10px 5px;
+    width: 25px;
+}
 
 /* CAIXAS */
-
-#box-b {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.096);
+#box-b1, #box-b2, #box-b3 {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.459);
     background: rgba(49, 83, 104, 1);
-    padding: 10px;
     border-radius: 25px;
+    padding: 20px;
+    width: 300px;
 }
 
 #box-cnc {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.459);
     background: rgba(49, 83, 104, 1);
+    border-radius: 25px;
+    padding: 25px 25px 0px 25px;
+    display: flex;
+}
+
+#txt-cnc {
+    margin: 0px 30px;
+    display: block;
 }
 
 #box-db {
     background: rgba(0, 35, 57, 1);
+    display: block;
+}
+
+/* IMAGENS */
+#img-b1, #img-b2, #img-b3 {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+    border-radius: 20px;
+    width: 300px;
+}
+
+#h-icon {
+    margin-right: 20px;
+    width: 50px;
+}
+
+#img-cnc {
+    aspect-ratio: 5 / 3;
+    border-radius: 20px;
+    object-fit: cover; 
+    width: 500px;
 }
