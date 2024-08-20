@@ -80,6 +80,11 @@ body.menu-open {
     padding: 15px;
 }
 
+#midias {
+    justify-content: center;
+    width: 20px;
+}
+
 /* Para telas grandes */
 @media (min-width: 768px) {
     #topicos {
@@ -94,15 +99,14 @@ body.menu-open {
 
     #topicos a {
         transition: transform 0.5s ease;
-        padding: 8px;
+        margin-top: 5px;
+        padding: 9px;
     }
 
     #topicos a:hover {
         transform: scale(1.05);
     }
-    
 }
-
 
 /* FONTES */
 span {
@@ -197,13 +201,13 @@ a {
 }
 
 #Expandir1:hover, #Expandir2:hover, #Expandir3:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 /* IMAGENS AZUL / SLIDE */
 #img-b1, #img-b2, #img-b3 {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
-    border-radius: 20px;
+    border-radius: 30px;
     margin-bottom: 15px;
     width: 100%;
 }
@@ -290,4 +294,94 @@ a {
         width: 100%;
         margin: 0px;
     }
+}
+
+/* CAIXA */
+.box-db {
+    margin-top: 20px;
+}
+
+#box-db {
+    background: rgba(0, 35, 57, 1);
+    flex-direction: column;
+    display: flex;
+    margin-bottom: 25px;
+    border-radius: 25px;
+    padding: 20px;
+    /*FONTE TITULO*/
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    color: white;
+}
+
+.ImputBox {
+    /* CAIXA */
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(234, 234, 234, 1);
+    margin: 0px 0px 15px 0px;
+    border-radius: 20px;
+    padding: 15px;
+    padding-left: 50px;
+    border: 0px;
+    cursor: text;
+    /* TEXTO INSERIDO */
+    font-family: "Poppins", sans-serif;
+    color:rgba(0, 35, 57, 1);
+    font-size: 15px;
+}
+
+#enviar {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+    border-radius: 15px;
+    text-align: center;
+    border: 0px;
+    padding: 10px;
+    width: 50%;
+}
+
+/* ICONE DAS CAIXAS */
+#nome {
+    background-image: url('media/pessoa.png');
+    background-position: 15px center;
+    background-repeat: no-repeat; 
+    background-size: 25px;
+    margin-top: 10px;
+}
+
+#email {
+    background-image: url('media/email.png');
+    background-position: 15px center;
+    background-repeat: no-repeat; 
+    background-size: 25px;
+}
+
+#phone {
+    background-image: url('media/phone.png');
+    background-position: 15px center;
+    background-repeat: no-repeat; 
+    background-size: 25px;
+}
+
+#mensagem {
+    background-image: url('media/mensagem.png');
+    background-position: 15px center;
+    background-repeat: no-repeat; 
+    background-size: 25px;
+}
+
+/* FOOTER */
+footer {
+    font-family: "Inter", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+a {
+    font-family: "Inter", sans-serif;
+    color: rgba(0, 35, 57, 1);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
 }
