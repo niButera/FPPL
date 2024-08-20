@@ -1,0 +1,109 @@
+/* CORPO */
+body {
+    background-color: rgba(199, 199, 199, 1);
+    transition: margin-top 0.3s ease;
+    margin: 90px 7% 30px 7%;
+    text-align: center;
+}
+
+/* CABEÇALHO */
+header {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.274);
+    transition: transform 0.3s ease-in-out;
+    background-color: rgba(0, 35, 57, 1);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+#h-content {
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin: 0 auto;
+    display: flex;
+    width: 85%;
+}
+
+#h-txt {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    text-align: left;
+    font-size: 15px;
+    color: white;
+    display: flex;
+}
+
+#h-icon {
+    padding-right: 25px;
+    width: 40px;
+}
+
+#menu {
+    cursor: pointer;
+    display: block;
+    width: 30px;
+}
+
+body.menu-open {
+    transition: margin-top 0.3s ease;
+    margin-top: 140px; 
+}
+
+/* TOPICOS */
+#topicos {
+    background-color: rgba(0, 35, 57, 1);
+    transition: max-height 0.2s ease-out;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    max-height: 0;
+    width: 100%;
+    top: 100%;
+}
+
+#topicos.show {
+    max-height: 500px;
+}
+
+#topicos a {
+    font-family: "Inter", sans-serif;
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px;
+}
+
+#midias {
+    justify-content: center;
+    width: 20px;
+}
+
+/* Para telas grandes */
+@media (min-width: 768px) {
+    #topicos {
+        background-color: rgb(63, 80, 117);
+        transition: margin-top 0.5s ease;
+        justify-content: center;
+        flex-direction: row;
+        position: relative;
+        display: flex;
+        top: initial;
+    }
+
+    #topicos a {
+        transition: transform 0.5s ease;
+        margin-top: 5px;
+        padding: 9px;
+    }
+
+    #topicos a:hover {
+        transform: scale(1.05);
+    }
+}
