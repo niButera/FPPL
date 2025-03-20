@@ -2,7 +2,7 @@
 body {
     background-color: rgba(199, 199, 199, 1);
     transition: margin-top 0.3s ease;
-    margin: 90px 7% 30px 7%;
+    margin: 95px 6% 30px 6%;
     text-align: center;
 }
 
@@ -85,14 +85,27 @@ body.menu-open {
     width: 20px;
 }
 
-/* Para telas grandes */
+/* FOOTER */
+footer, a {
+    font-family: "Inter", sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* Para telas grandes (desktop) */
 @media (min-width: 768px) {
+    body {
+        margin: 150px 7% 30px 7%;
+    }
+
     #topicos {
-        background-color: rgb(63, 80, 117);
-        transition: margin-top 0.5s ease;
+        background-color: rgba(49, 83, 104, 1);
         justify-content: center;
         flex-direction: row;
         position: relative;
+        overflow: visible;
+        max-height: none;
         display: flex;
         top: initial;
     }
@@ -105,5 +118,9 @@ body.menu-open {
 
     #topicos a:hover {
         transform: scale(1.05);
+    }
+
+    #menu {
+        visibility: hidden;
     }
 }

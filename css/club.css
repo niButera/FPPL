@@ -1,0 +1,23 @@
+#club-box {
+    background-color: rgba(49, 83, 104);
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+}
+
+#infos {
+    flex-direction: row;
+    display: flex;
+}
+
+#logo-club {
+    border-radius: 15px;
+    width: 30px 30px;
+}
+
+#txt {
+    flex-direction: column;
+    text-align: left;
+    display: flex;
+}

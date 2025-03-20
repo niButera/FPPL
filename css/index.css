@@ -97,7 +97,7 @@ a {
 /* IMAGENS AZUL / SLIDE */
 #img-b1, #img-b2, #img-b3 {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
-    border-radius: 30px;
+    border-radius: 20px;
     margin-bottom: 15px;
     width: 100%;
 }
@@ -213,9 +213,10 @@ a {
     margin-bottom: 25px;
     border-radius: 25px;
     padding: 20px;
+    /* FONTE */
     font-family: "Inter", sans-serif;
     font-weight: bold;
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
     font-size: 25px;
     color: white;
 }
@@ -241,10 +242,9 @@ a {
     border: 0px;
     padding: 10px;
     width: 50%;
-    margin: 0 auto; /* Centraliza o botão */
-    display: block; /* Garante que o botão se comporte como um bloco */
+    margin: 0 auto;
+    display: block; 
 }
-
 
 /* Ícones */
 #nome {
@@ -276,18 +276,10 @@ a {
     background-size: 25px;
 }
 
-
-/* FOOTER */
-footer {
-    font-family: "Inter", sans-serif;
-    color: rgb(0, 0, 0);
-    font-size: 15px;
-}
-
 a {
     font-family: "Inter", sans-serif;
-    color: rgba(0, 35, 57, 1);
-    text-decoration: none;
+    color: rgb(34, 145, 39);
     font-weight: bold;
     font-size: 13px;
+    text-decoration: none;
 }
