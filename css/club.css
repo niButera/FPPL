@@ -1,23 +1,57 @@
+/* caixas de clube' */
 #club-box {
-    background-color: rgba(49, 83, 104);
+    background: linear-gradient(to left, rgb(73, 121, 211), rgba(0, 35, 57, 1));
     flex-direction: column;
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 25px;
+    padding: 18px;
     display: flex;
+    margin: 20px 0px;
 }
 
 #infos {
     flex-direction: row;
     display: flex;
+    gap: 20px;
 }
 
 #logo-club {
-    border-radius: 15px;
-    width: 30px 30px;
+    border-radius: 20px;
+    width: 30%;
+    height: 30%;
 }
 
 #txt {
     flex-direction: column;
-    text-align: left;
     display: flex;
+   /* FONTE */
+    color: rgba(255, 255, 255, 0.685);
+    font-family: "Inter", sans-serif;
+    text-align: left;
+    font-size: 15px;
+}
+
+button {
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 8px;
+    border: 0px;
+    /* FONTE */
+    font-family: "Inter", sans-serif;
+    color: rgba(0, 35, 57, 1);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+h1 {
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.274);
+    font-family: "Inter", sans-serif;
+    color: rgba(0, 35, 57, 1);
+    font-size: 25px;
+}
+
+h2 {
+    font-family: "Inter", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin: 0px;
 }
