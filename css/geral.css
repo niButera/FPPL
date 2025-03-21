@@ -2,7 +2,7 @@
 body {
     background-color: rgba(199, 199, 199, 1);
     transition: margin-top 0.3s ease;
-    margin: 95px 6% 30px 6%;
+    margin: 80px 6% 30px 6%;
     text-align: center;
 }
 
@@ -16,6 +16,18 @@ header {
     z-index: 1;
     left: 0;
     top: 0;
+}
+
+#back, #empty {
+    flex: 0 0 auto;
+    width: 20px;
+}
+
+#top-info {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
 }
 
 #h-content {
