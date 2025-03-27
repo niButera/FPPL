@@ -1,11 +1,18 @@
-/* caixas de clube' */
+/* jts a nos */
+#box-db {
+    margin-top: 20px;
+}
+
+/* caixas de clube */
 #club-box {
-    background: linear-gradient(to left, rgb(73, 121, 211), rgba(0, 35, 57, 1));
+    background: linear-gradient(to right, rgb(77, 108, 194), rgba(0, 35, 57, 1));
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.425);
+    transition: transform 0.3s ease;
     flex-direction: column;
     border-radius: 25px;
-    padding: 18px;
-    display: flex;
     margin: 20px 0px;
+    padding: 15px;
+    display: flex;
 }
 
 #infos {
@@ -23,7 +30,7 @@
 #txt {
     flex-direction: column;
     display: flex;
-   /* FONTE */
+    /* FONTE */
     color: rgba(255, 255, 255, 0.685);
     font-family: "Inter", sans-serif;
     text-align: left;
@@ -31,6 +38,8 @@
 }
 
 button {
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.425);
+    transition: transform 0.3s ease;
     border-radius: 15px;
     margin-top: 10px;
     padding: 8px;
@@ -40,6 +49,19 @@ button {
     color: rgba(0, 35, 57, 1);
     font-weight: bold;
     font-size: 15px;
+}
+
+button:hover, #club-box:hover  {
+    transform: scale(1.01);
+}
+
+/* FONTES */
+span {
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    color: white;
+    margin: 10px;
 }
 
 h1 {
@@ -61,4 +83,41 @@ p {
     color: rgb(0, 0, 0);
     font-size: 15px;
     margin: 0px;
+}
+
+a {
+    font-family: "Inter", sans-serif;
+    color:  rgb(25, 104, 18);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Ajustes para telas grandes */
+@media (min-width: 768px) {
+    #clubes, #clubes2 {
+        justify-content: space-between;
+        display: flex;
+        margin: 20px 0px 0px 0px;
+        width: 100%;
+        gap: 20px;
+    }
+
+    #clubes2 {
+        margin-bottom: 40px;
+    }
+
+    #club-box {
+        margin: 0px;
+        width: 100%;
+    }
+
+    #infos {
+        word-wrap: break-word;
+        gap: 20px;
+    }
+
+    #logo-club {
+        height: 90px;
+        width: 90px;
+    }
 }
