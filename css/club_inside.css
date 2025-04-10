@@ -1,0 +1,31 @@
+body {
+    background: linear-gradient(to bottom, rgba(0, 35, 57, 1), rgb(42, 83, 109));
+    background-repeat: no-repeat;
+    height: 100vh;
+}   
+
+h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    text-align: left;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+
+#img-club {
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.425);
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#txt-club {
+    background-color: rgb(236, 236, 236);
+    padding: 5px 20px;
+    border-radius: 20px;
+}

@@ -5,7 +5,7 @@
 
 /* caixas de clube */
 #club-box {
-    background: linear-gradient(to right, rgb(77, 108, 194), rgba(0, 35, 57, 1));
+    background: linear-gradient(to left, rgba(0, 35, 57, 1), rgb(42, 83, 109));
     box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.425);
     transition: transform 0.3s ease;
     flex-direction: column;
