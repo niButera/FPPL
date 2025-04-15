@@ -1,8 +1,12 @@
 /* CORPO */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgba(199, 199, 199, 1);
     transition: margin-top 0.3s ease;
-    margin: 80px 6% 30px 6%;
+    margin: 80px 4% 30px 4%;
     text-align: center;
 }
 
@@ -18,7 +22,8 @@ header {
     top: 0;
 }
 
-#back, #empty {
+#back,
+#empty {
     transition: transform 0.3s ease;
     flex: 0 0 auto;
     width: 20px;
@@ -66,15 +71,15 @@ header {
 
 body.menu-open {
     transition: margin-top 0.3s ease;
-    margin-top: 140px; 
+    margin-top: 140px;
 }
 
 /* CAIXA */
 .box-db {
-    display: flex;
     flex-direction: column;
-    margin-top: 20px;
     align-items: center;
+    margin-top: 20px;
+    display: flex;
 }
 
 #box-db {
@@ -114,7 +119,7 @@ body.menu-open {
     border-radius: 60px;
     text-align: center;
     margin: 0 auto;
-    display: block; 
+    display: block;
     padding: 10px;
     border: 0px;
     width: 50%;
@@ -128,7 +133,7 @@ body.menu-open {
 #nome {
     background-image: url('media/pessoa.png');
     background-position: 15px center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: 25px;
     margin-top: 10px;
 }
@@ -136,21 +141,21 @@ body.menu-open {
 #email {
     background-image: url('media/email.png');
     background-position: 15px center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: 25px;
 }
 
 #phone {
     background-image: url('media/phone.png');
     background-position: 15px center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: 25px;
 }
 
 #mensagem {
     background-image: url('media/mensagem.png');
     background-position: 15px center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: 25px;
 }
 
@@ -188,7 +193,8 @@ body.menu-open {
 }
 
 /* FOOTER */
-footer, a {
+footer,
+a {
     font-family: "Inter", sans-serif;
     color: rgb(0, 0, 0);
     font-weight: bold;
@@ -224,5 +230,30 @@ footer, a {
 
     #menu {
         visibility: hidden;
+    }
+
+    /* CAIXA */
+    .box-db {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 20px;
+        display: flex;
+    }
+
+    #box-db {
+        box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.425);
+        background: rgba(0, 35, 57, 1);
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+        border-radius: 25px;
+        padding: 20px;
+        /* FONTE */
+        font-family: "Inter", sans-serif;
+        font-weight: bold;
+        text-align: center;
+        font-size: 25px;
+        color: white;
     }
 }

@@ -3,14 +3,8 @@ body {
     margin-top: 95px;
 }
 
-@media (min-width: 768px) {
-    body {
-        margin-top: 140px;
-    }
-}
-
 /* FONTES */
-span, p, a, h1, h2, h3, #c-left, #txt-cnc, .texto {
+span, p, a, h1, h2, h3, #c-left, #txt-cnc,.texto {
     font-family: "Inter", sans-serif;
 }
 
@@ -58,17 +52,35 @@ a {
     font-size: 0.9rem;
 }
 
+/* CONTEÚDO PRINCIPAL */
+#content {
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+}
+
+/* LOGO E TEXTOS */
+#c-logo {
+    width: 30%;
+}
+
+#c-left {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+}
+
 /* CARDS / SLIDE */
 .slide-container {
-    padding-left: 20px;
     overflow: hidden;
-    width: 150%;
+    width: 100%;
 }
 
 .slide {
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
-    padding-bottom: 20px;
     overflow-x: auto;
     display: flex;
     gap: 20px;
@@ -86,7 +98,6 @@ a {
 #info-b {
     scroll-snap-type: x mandatory;
     justify-content: space-between;
-    margin-top: 25px;
     overflow-x: auto;
     display: flex;
     gap: 20px;
@@ -94,16 +105,19 @@ a {
 
 #c-right {
     justify-content: space-between;
-    margin-top: 20px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .card {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    scroll-snap-align: start;
     border-radius: 20px;
     position: relative;
     overflow: hidden;
+    flex: 0 0 80%;
     height: 330px;
     width: 450px;
 }
@@ -117,7 +131,7 @@ a {
 
 .overlay {
     background: linear-gradient(to top, rgb(42, 83, 109) 10%, transparent);
-    transition: 0.3s ease;
+    transition: background-color 0.3s ease;
     justify-content: flex-end;
     box-sizing: border-box;
     flex-direction: column;
@@ -181,47 +195,6 @@ a {
     transform: scale(1.09);
 }
 
-/* CONTEÚDO PRINCIPAL */
-#content {
-    flex-direction: column;
-    display: flex;
-    gap: 20px;
-}
-
-@media (min-width: 768px) {
-    #content {
-        justify-content: space-between;
-        flex-direction: row;
-        align-items: center;
-        gap: 20%;
-    }
-}
-
-/* LOGO E TEXTOS */
-#c-logo {
-    width: 30%;
-}
-
-@media (min-width: 768px) {
-    #c-logo {
-        width: 150px;
-    }
-}
-
-#c-left {
-    text-align: center;
-    font-size: 15px;
-    color: white;
-}
-
-@media (min-width: 768px) {
-    #c-left {
-        text-align: left;
-        font-size: 18px;
-        color: black;
-    }
-}
-
 /* CONHEÇA */
 #box-cnc {
     background: linear-gradient(to top, rgba(0, 35, 57, 1), rgb(42, 83, 109));
@@ -233,29 +206,12 @@ a {
     display: flex;
 }
 
-@media (min-width: 768px) {
-    #box-cnc {
-        flex-direction: row;
-        height: 100%;
-    }
-}
-
 #txt-cnc {
     text-align: left;
     font-size: 15px;
     margin-top: 5px;
     display: block;
     color: white;
-}
-
-@media (min-width: 768px) {
-    #txt-cnc {
-        flex-direction: column;
-        margin: 0 15px 0 30px;
-        display: flex;
-        flex-grow: 1;
-        width: 100%;
-    }
 }
 
 .img-glr {
@@ -267,13 +223,6 @@ a {
     width: 100%;
 }
 
-@media (min-width: 768px) {
-    .img-glr {
-        margin-bottom: 0;
-        max-width: none;
-    }
-}
-
 /* AÇÕES */
 #actions {
     justify-content: space-between;
@@ -283,26 +232,91 @@ a {
     gap: 10px;
 }
 
-@media (min-width: 768px) {
-    #actions {
-        margin-top: auto;
-        width: 100%;
-    }
-}
-
 /* DÚVIDAS */
 .box-db {
     flex-direction: column;
 }
 
+#teste {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 @media (min-width: 768px) {
+    body {
+        margin-top: 140px;
+    }
+
+    #content {
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        gap: 20%;
+    }
+
+    #c-logo {
+        width: 150px;
+    }
+
+    #c-left {
+        text-align: left;
+        font-size: 18px;
+        color: black;
+    }
+
+    /* CARDS / SLIDE */
+    .slide-container {
+        padding-left: 20px;
+        width: 150%;
+    }
+
+    .slide {
+        padding-bottom: 20px;
+    }
+
+    #info-b {
+        margin-top: 25px;
+    }
+
+    #c-right {
+        padding: 10px;
+    }
+
+    #box-cnc {
+        flex-direction: row;
+        height: 100%;
+    }
+
+    #txt-cnc {
+        flex-direction: column;
+        margin: 0 15px 0 30px;
+        display: flex;
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    .img-glr {
+        margin-bottom: 0;
+        max-width: none;
+    }
+
+    #actions {
+        margin-top: auto;
+        width: 100%;
+    }
+
     .box-db {
         justify-content: space-between;
         flex-direction: row;
+        width: 100%;
+        gap: 20px
     }
 
     #box-db {
-        width: 45%;
+        width: 100%;
     }
 
     #teste {
