@@ -1,10 +1,11 @@
 body {
     background: linear-gradient(to bottom, rgba(0, 35, 57, 1), rgb(42, 83, 109));
     background-repeat: no-repeat;
-}   
+}
 
 /* FONTES */
-h1, h2 {
+h1,
+h2 {
     font-family: "Inter", sans-serif;
     font-size: 25px;
     color: white;
@@ -24,14 +25,14 @@ p {
 }
 
 /* BOTÕES */
-.hst {
-    /* CAIXA */ 
+.insta, .face {
+    /* CAIXA */
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24);
     background-color: #fff;
     border-radius: 60px;
-    padding: 15px 0; 
+    padding: 15px 0;
     border: 0px;
-    width: 100%; 
+    width: 100%;
     /* FONTE */
     font-family: "Inter", sans-serif;
     color: rgba(10, 29, 62, 1);
@@ -39,22 +40,40 @@ p {
     font-weight: bold;
     font-size: 20px;
     /* ICON */
-    background-image: url('media/insta.png');
     background-position: 15px center;
-    background-repeat: no-repeat; 
-    background-size: 30px; 
-    padding-left: 70px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    padding-left: 60px;
 }
 
-.hst:hover {
-    background-color: rgba(0, 35, 57, 1);
-    color: white;
-    transition: 0.3s ease;
+.insta {
+    /* ICON */
+    background-image: url('media/insta-blue.png');
 }
+
+.face {
+    /* ICON */
+    background-image: url('media/face-blue.png');
+}
+
+.insta:hover {
+    background-image: url('media/instagram2.png');
+    background-color: rgba(0, 35, 57, 1);
+    transition: 0.3s ease;
+    color: white;
+}
+
+.face:hover {
+    background-image: url('media/facebook.png');
+    background-color: rgba(0, 35, 57, 1);
+    transition: 0.3s ease;
+    color: white;
+}
+
 #infos {
-    gap: 20px;
-    display: flex;
     flex-direction: column;
+    display: flex;
+    gap: 20px;
 }
 
 #club-info {
@@ -88,7 +107,8 @@ p {
     gap: 10px;
 }
 
-footer, a {
+footer,
+a {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
@@ -97,7 +117,7 @@ footer, a {
     #img-club {
         width: 400%;
     }
-    
+
     #club-info {
         justify-content: space-between;
         flex-direction: row;
@@ -105,6 +125,6 @@ footer, a {
     }
 
     #txt-club {
-        padding: 20px;
+        padding: 20px 25px;
     }
 }
